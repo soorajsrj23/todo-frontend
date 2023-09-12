@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { Container, Row, Col, FormGroup, Label } from 'reactstrap';
 import './Login.css'
 import { BASE_URL } from '../Config/helper';
+import HelmetComponent from '../Config/HelmetComponent';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -39,6 +40,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      <HelmetComponent pageTitle="Login"/>
    <Container className="h-100">
     <Row className="h-100 justify-content-center align-items-center">
       <Col md="4" className="mx-auto">

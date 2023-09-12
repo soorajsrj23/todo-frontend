@@ -6,6 +6,7 @@ import { Container, Row, Col, FormGroup, Label } from 'reactstrap';
 import './SignUp.css'
 import { toast } from 'react-toastify';
 import { BASE_URL } from '../Config/helper';
+import HelmetComponent from '../Config/HelmetComponent';
 
 const API_BASE=BASE_URL;
 
@@ -58,6 +59,7 @@ const SignUp = () => {
 
   return (
     <div className="signup-container">
+      <HelmetComponent pageTitle="SignUp"/>
       <Container className="h-100">
         <Row className="h-100 justify-content-center align-items-center">
           <Col md="4" className="mx-auto">
