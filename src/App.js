@@ -17,6 +17,7 @@ function App() {
      <Route path='/todo' element={<ToDo/>}/>
      <Route path='/profile' element={<EditProfile/>}/>
      <Route path='/history' element={<History/>}/>
+     <Route path="*" element={<Login />} />
 
     
      </Routes>
