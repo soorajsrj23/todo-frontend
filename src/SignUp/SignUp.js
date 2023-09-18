@@ -43,6 +43,7 @@ const SignUp = () => {
           // Navigate to the next page
           toast.success('User registered successfully');
           navigate(`${API_BASE}/login`);
+          
         })
         .catch((error) => {
           console.error(error);
