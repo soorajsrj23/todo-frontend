@@ -42,7 +42,7 @@ const SignUp = () => {
           setSelectedFile(null);
           // Navigate to the next page
           toast.success('User registered successfully');
-          navigate('/login');
+          navigate(`${API_BASE}/login`);
         })
         .catch((error) => {
           console.error(error);
